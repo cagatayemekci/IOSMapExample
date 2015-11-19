@@ -1,0 +1,44 @@
+ [
+  {
+  "Country":"Türkiye",
+  "Capital":"Ankara",
+  "Latitude":39.93,
+  "Longitude":32.86
+  
+  },
+  {
+  "Country":"İspanya",
+  "Capital":"Madrid",
+  "Latitude":40.42,
+  "Longitude":-3.7
+  },
+  {
+  "Country":"Azerbaycan",
+  "Capital":"Baku",
+  "Latitude":40.4,
+  "Longitude":49.88
+  },
+  {
+  "Country":"Polonya",
+  "Capital":"Varşova",
+  "Latitude":52.25,
+  "Longitude":21
+  },
+  {
+  "Country":"Almanya",
+  "Capital":"Berlin",
+  "Latitude":52.52,
+  "Longitude":13.4
+  },
+  {
+  "Country":"Fransa",
+  "Capital":"Paris",
+  "Latitude":48.85,
+  "Longitude":2.35
+  }
+  ]
+
+
+
+
+

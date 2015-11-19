@@ -15,6 +15,10 @@
 		28E8BB9A1BFE0E2E00782534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E8BB981BFE0E2E00782534 /* LaunchScreen.storyboard */; };
 		28E8BBA51BFE0E2E00782534 /* IOSMapExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E8BBA41BFE0E2E00782534 /* IOSMapExampleTests.m */; };
 		28E8BBB01BFE0E2E00782534 /* IOSMapExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E8BBAF1BFE0E2E00782534 /* IOSMapExampleUITests.m */; };
+		28E8BBBE1BFE0E7600782534 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E8BBBD1BFE0E7600782534 /* MapKit.framework */; };
+		28E8BBC21BFE0FF800782534 /* JFMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E8BBC11BFE0FF800782534 /* JFMapAnnotation.m */; };
+		28E8BBC41BFE106700782534 /* capitals.json in Resources */ = {isa = PBXBuildFile; fileRef = 28E8BBC31BFE106700782534 /* capitals.json */; };
+		28E8BBC61BFE118D00782534 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E8BBC51BFE118D00782534 /* point.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		28E8BBAB1BFE0E2E00782534 /* IOSMapExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSMapExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E8BBAF1BFE0E2E00782534 /* IOSMapExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSMapExampleUITests.m; sourceTree = "<group>"; };
 		28E8BBB11BFE0E2E00782534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E8BBBD1BFE0E7600782534 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		28E8BBC01BFE0FF800782534 /* JFMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMapAnnotation.h; sourceTree = "<group>"; };
+		28E8BBC11BFE0FF800782534 /* JFMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMapAnnotation.m; sourceTree = "<group>"; };
+		28E8BBC31BFE106700782534 /* capitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capitals.json; sourceTree = "<group>"; };
+		28E8BBC51BFE118D00782534 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = point.png; path = IOSMapExample/point.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E8BBBE1BFE0E7600782534 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,8 @@
 		28E8BB7E1BFE0E2E00782534 = {
 			isa = PBXGroup;
 			children = (
+				28E8BBC51BFE118D00782534 /* point.png */,
+				28E8BBBD1BFE0E7600782534 /* MapKit.framework */,
 				28E8BB891BFE0E2E00782534 /* IOSMapExample */,
 				28E8BBA31BFE0E2E00782534 /* IOSMapExampleTests */,
 				28E8BBAE1BFE0E2E00782534 /* IOSMapExampleUITests */,
@@ -101,6 +113,7 @@
 		28E8BB891BFE0E2E00782534 /* IOSMapExample */ = {
 			isa = PBXGroup;
 			children = (
+				28E8BBBF1BFE0FD900782534 /* Annotation */,
 				28E8BB8D1BFE0E2E00782534 /* AppDelegate.h */,
 				28E8BB8E1BFE0E2E00782534 /* AppDelegate.m */,
 				28E8BB901BFE0E2E00782534 /* ViewController.h */,
@@ -109,6 +122,7 @@
 				28E8BB961BFE0E2E00782534 /* Assets.xcassets */,
 				28E8BB981BFE0E2E00782534 /* LaunchScreen.storyboard */,
 				28E8BB9B1BFE0E2E00782534 /* Info.plist */,
+				28E8BBC31BFE106700782534 /* capitals.json */,
 				28E8BB8A1BFE0E2E00782534 /* Supporting Files */,
 			);
 			path = IOSMapExample;
@@ -138,6 +152,15 @@
 				28E8BBB11BFE0E2E00782534 /* Info.plist */,
 			);
 			path = IOSMapExampleUITests;
+			sourceTree = "<group>";
+		};
+		28E8BBBF1BFE0FD900782534 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				28E8BBC01BFE0FF800782534 /* JFMapAnnotation.h */,
+				28E8BBC11BFE0FF800782534 /* JFMapAnnotation.m */,
+			);
+			name = Annotation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +268,8 @@
 			files = (
 				28E8BB9A1BFE0E2E00782534 /* LaunchScreen.storyboard in Resources */,
 				28E8BB971BFE0E2E00782534 /* Assets.xcassets in Resources */,
+				28E8BBC61BFE118D00782534 /* point.png in Resources */,
+				28E8BBC41BFE106700782534 /* capitals.json in Resources */,
 				28E8BB951BFE0E2E00782534 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28E8BB921BFE0E2E00782534 /* ViewController.m in Sources */,
+				28E8BBC21BFE0FF800782534 /* JFMapAnnotation.m in Sources */,
 				28E8BB8F1BFE0E2E00782534 /* AppDelegate.m in Sources */,
 				28E8BB8C1BFE0E2E00782534 /* main.m in Sources */,
 			);
@@ -413,7 +439,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IOSMapExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LongPressGestureRecognizer.IOSMapExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +452,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IOSMapExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LongPressGestureRecognizer.IOSMapExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
